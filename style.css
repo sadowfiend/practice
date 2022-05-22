@@ -1,0 +1,80 @@
+.filter-container {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+th{
+    background: bisque;
+}
+td {
+    background: navajowhite;
+}
+
+.styled-select {
+    width: 105px;
+}
+
+.styled-select select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    padding: 4px 40px;
+}
+
+
+
+span.select-arrow {
+    display: block;
+    position: relative;
+    bottom: 17px;
+    left: 86px;
+    width: 10px;
+    height: 10px;
+    background: black url(arrow-right-icon.svg) center no-repeat;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.property-arrow {
+    left: 60px!important;
+    bottom: 33px!important;
+}
+
+.styled-select::before {
+    content: '';
+    display: block;
+    position: relative;
+    top: 18px;
+    left: 86px;
+    width: 10px;
+    height: 10px;
+    background: black url(arrow-right-icon.svg) center no-repeat;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.select-open::before {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
